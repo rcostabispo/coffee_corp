@@ -8,8 +8,8 @@ RailsAdmin.config do |config|
   end
   config.current_user_method(&:current_user)
 
-  ## == Cancan ==
-  # config.authorize_with :cancan
+  # == Cancan ==
+  config.authorize_with :cancan
 
   ## == Pundit ==
   # config.authorize_with :pundit
@@ -22,6 +22,28 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar true
+
+  config.model User do
+    edit do
+      field :name
+      field :document
+      field :phone
+      field :kind do
+        visible do
+          bindings[:user].kind == 'manager'
+        end
+      end
+      field :status
+      field :notes
+    end
+  end
+
+        # if bindings[:view]._current_user.has_role? :master
+        #   bindings[:view].render :partial => "rails_admin/main/#{partial}", :locals => {:field => self, :form => bindings[:form] }
+        # else
+        #   ''
+        # end
+
 
   config.actions do
     dashboard                     # mandatory
