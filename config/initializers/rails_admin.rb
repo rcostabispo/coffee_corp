@@ -28,14 +28,15 @@ RailsAdmin.config do |config|
       field :name
       field :document
       field :phone
+      field :admin
       field :kind do
         visible do
-          bindings[:view].current_user.kind == 'manager'
+          bindings[:view].current_user.admin?
         end
       end
       field :status do
         visible do
-          bindings[:view].current_user.kind == 'manager'
+          bindings[:view].current_user.admin?
         end
       end
       field :notes
