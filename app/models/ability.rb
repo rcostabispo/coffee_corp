@@ -2,9 +2,9 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    if user.kind == 'manager'
+    if user.admin?
       can :manage, :all
-    elsif user.kind == 'employee'
+    else
       can :access, :rails_admin
       can :dashboard
       can [:read, :edit], User, :id => user.id

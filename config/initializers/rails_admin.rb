@@ -28,8 +28,7 @@ RailsAdmin.config do |config|
       field :name
       field :document
       field :phone
-      field :admin
-      field :kind do
+      field :admin do
         visible do
           bindings[:view].current_user.admin?
         end
