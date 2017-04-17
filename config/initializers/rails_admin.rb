@@ -30,20 +30,17 @@ RailsAdmin.config do |config|
       field :phone
       field :kind do
         visible do
-          bindings[:user].kind == 'manager'
+          bindings[:view].current_user.kind == 'manager'
         end
       end
-      field :status
+      field :status do
+        visible do
+          bindings[:view].current_user.kind == 'manager'
+        end
+      end
       field :notes
     end
   end
-
-        # if bindings[:view]._current_user.has_role? :master
-        #   bindings[:view].render :partial => "rails_admin/main/#{partial}", :locals => {:field => self, :form => bindings[:form] }
-        # else
-        #   ''
-        # end
-
 
   config.actions do
     dashboard                     # mandatory
