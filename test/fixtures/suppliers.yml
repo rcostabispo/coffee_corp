@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_name: MyString
+  fantasy_name: MyString
+  document: MyString
+  individual_businessman: MyString
+  zip_code: MyString
+  address: MyString
+  number: MyString
+  neighborhood: MyString
+  state: MyString
+  city: MyString
+  principal_activity: MyString
+  delivery_time: MyString
+  request_time: MyString
+  freight_type: MyString
+  payment_conditions: MyString
+
+two:
+  company_name: MyString
+  fantasy_name: MyString
+  document: MyString
+  individual_businessman: MyString
+  zip_code: MyString
+  address: MyString
+  number: MyString
+  neighborhood: MyString
+  state: MyString
+  city: MyString
+  principal_activity: MyString
+  delivery_time: MyString
+  request_time: MyString
+  freight_type: MyString
+  payment_conditions: MyString
