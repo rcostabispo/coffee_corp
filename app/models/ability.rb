@@ -7,7 +7,9 @@ class Ability
     else
       can :access, :rails_admin
       can :dashboard
-      can [:read, :edit], User, :id => user.id
+      can :edit, User, :id => user.id
+      can :read, Product
+      can :read, Supplier
     end
 
     # Define abilities for the passed in user here. For example:
