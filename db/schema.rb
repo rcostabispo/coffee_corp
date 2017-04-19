@@ -31,10 +31,14 @@ ActiveRecord::Schema.define(version: 20170419112813) do
     t.string   "fantasy_name"
     t.string   "document"
     t.string   "individual_businessman"
+    t.string   "site"
+    t.string   "email"
+    t.string   "phone"
     t.string   "zip_code"
+    t.string   "neighborhood"
     t.string   "address"
     t.string   "number"
-    t.string   "neighborhood"
+    t.string   "complement"
     t.string   "state"
     t.string   "city"
     t.string   "principal_activity"
@@ -42,6 +46,11 @@ ActiveRecord::Schema.define(version: 20170419112813) do
     t.string   "request_time"
     t.integer  "freight_type"
     t.string   "payment_conditions"
+    t.string   "icms"
+    t.string   "pis_cofins"
+    t.string   "ipi"
+    t.string   "last_purchase"
+    t.string   "notes"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
