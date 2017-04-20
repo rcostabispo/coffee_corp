@@ -40,8 +40,6 @@ RailsAdmin.config do |config|
         end
       end
       field :notes
-      field :created_at
-      field :updated_at
     end
   end
 
@@ -77,18 +75,28 @@ RailsAdmin.config do |config|
       field :fantasy_name
       field :document
       field :individual_businessman
+      field :site
+      field :email
+      field :phone
       field :zip_code
+      field :neighborhood
       field :address
       field :number
-      field :neighborhood
-      field :state
+      field :complement
       field :city
       field :principal_activity
       field :delivery_time
       field :request_time
       field :freight_type
       field :payment_conditions
+      field :icms
+      field :pis_cofins
+      field :last_purchase
+      field :notes
       field :products
+      field :representatives
+      field :created_at
+      field :updated_at
     end
 
     edit do
@@ -96,24 +104,73 @@ RailsAdmin.config do |config|
       field :fantasy_name
       field :document
       field :individual_businessman
+      field :site
+      field :email
+      field :phone
       field :zip_code
+      field :neighborhood
       field :address
       field :number
-      field :neighborhood
-      field :state
+      field :complement
       field :city
       field :principal_activity
       field :delivery_time
       field :request_time
       field :freight_type
       field :payment_conditions
+      field :icms
+      field :pis_cofins
+      field :last_purchase
+      field :notes
       field :products do
+        inline_add false
+      end
+      field :representatives do
         inline_add false
       end
     end
   end
 
+  config.model Representative do
+    create do
+      field :name
+      field :occupation
+      field :email
+      field :phone
+      field :cell_phone
+      field :suppliers do
+        inline_add false
+      end
+    end
+
+    edit do
+      field :name
+      field :occupation
+      field :email
+      field :phone
+      field :cell_phone
+      field :suppliers do
+        inline_add false
+      end
+    end
+
+    show do
+      field :name
+      field :occupation
+      field :email
+      field :phone
+      field :cell_phone
+      field :suppliers
+      field :created_at
+      field :updated_at
+    end
+  end
+
   config.model ProductSupplier do
+    visible false
+  end
+
+  config.model RepresentativeSupplier do
     visible false
   end
 

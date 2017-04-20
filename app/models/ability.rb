@@ -10,6 +10,7 @@ class Ability
       can :edit, User, :id => user.id
       can :read, Product
       can :read, Supplier
+      can :read, Representative
     end
 
     # Define abilities for the passed in user here. For example:
