@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20170420014612) do
   end
 
   create_table "suppliers", force: :cascade do |t|
+    t.string   "code"
     t.string   "company_name"
     t.string   "fantasy_name"
     t.string   "document"
@@ -66,7 +67,7 @@ ActiveRecord::Schema.define(version: 20170420014612) do
     t.string   "icms"
     t.string   "pis_cofins"
     t.string   "ipi"
-    t.string   "last_purchase"
+    t.text     "last_purchase"
     t.string   "notes"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false

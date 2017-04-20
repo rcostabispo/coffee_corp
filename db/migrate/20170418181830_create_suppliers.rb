@@ -1,6 +1,7 @@
 class CreateSuppliers < ActiveRecord::Migration[5.0]
   def change
     create_table :suppliers do |t|
+      t.string :code
       t.string :company_name
       t.string :fantasy_name
       t.string :document
@@ -23,7 +24,7 @@ class CreateSuppliers < ActiveRecord::Migration[5.0]
       t.string :icms
       t.string :pis_cofins
       t.string :ipi
-      t.string :last_purchase
+      t.text   :last_purchase
       t.string :notes
 
       t.timestamps
