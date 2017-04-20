@@ -1,0 +1,9 @@
+# encoding: utf-8
+
+"pt-BR":
+
+  activerecord:
+
+    attributes:
+      batch:
+        created_at: "Criado em
