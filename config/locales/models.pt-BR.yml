@@ -3,7 +3,74 @@
 "pt-BR":
 
   activerecord:
-
+    models:
+      product:
+        one: "Produto"
+        other: "Produtos"
+      supplier:
+        one: "Fornecedor"
+        other: "Fornecedores"
+      user:
+        one: "Usuário"
+        other: "Usuários"
+      representative:
+        one: "Representante"
+        other: "Representantes"
     attributes:
-      batch:
-        created_at: "Criado em
+      user:
+        name: "Nome"
+        document: "Documento"
+        phone: "Telefone"
+        status: "Situação"
+        notes: "Notas"
+        email: "E-mail"
+        sign_in_count: "Contagem de login"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+        password: "Senha"
+        password_confirmation: "Confirmar Senha"
+        current_password: "Senha Atual"
+        remember_me: "Lembre-se de mim"
+      representative:
+        name: "Nome"
+        occupation: "Cargo"
+        email: "E-mail"
+        phone: "Telefone"
+        cell_phone: "Celular"
+        suppliers: "Fornecedores"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      product:
+        description: "Descrição"
+        notes: "Notas"
+        suppliers: "Fornecedores"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      supplier:
+        company_name: "Nome/Razão Social"
+        fantasy_name: "Nome Fantasia"
+        document: "Documento"
+        individual_businessman: "Empreendedor Individual"
+        site: "Site"
+        email: "E-mail"
+        phone: "Telefone"
+        zip_code: "CEP"
+        neighborhood: "Bairro"
+        address: "Endereço"
+        number: "Número"
+        complement: "Complemento"
+        city: "Município"
+        principal_activity: "Principal Atividade"
+        delivery_time: "Prazo Logístico"
+        request_time: "Prazo da Solicitação"
+        freight_type: "Tipo de Frete"
+        payment_conditions: "Condições de Pagamento"
+        icms: "ICMS"
+        pis_cofins: "PIS/ COFINS"
+        ipi: "IPI"
+        last_purchase: "Ùltimas compras"
+        notes: "Notas"
+        products: "Produtos"
+        representatives: "Representantes"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"

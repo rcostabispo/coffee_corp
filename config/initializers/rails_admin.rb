@@ -52,6 +52,14 @@ RailsAdmin.config do |config|
       field :updated_at
     end
 
+    list do
+      field :description
+      field :notes
+      field :suppliers
+      field :created_at
+      field :updated_at
+    end
+
     edit do
       field :description
       field :notes
@@ -91,6 +99,37 @@ RailsAdmin.config do |config|
       field :payment_conditions
       field :icms
       field :pis_cofins
+      field :ipi
+      field :last_purchase
+      field :notes
+      field :products
+      field :representatives
+      field :created_at
+      field :updated_at
+    end
+
+    list do
+      field :company_name
+      field :fantasy_name
+      field :document
+      field :individual_businessman
+      field :site
+      field :email
+      field :phone
+      field :zip_code
+      field :neighborhood
+      field :address
+      field :number
+      field :complement
+      field :city
+      field :principal_activity
+      field :delivery_time
+      field :request_time
+      field :freight_type
+      field :payment_conditions
+      field :icms
+      field :pis_cofins
+      field :ipi
       field :last_purchase
       field :notes
       field :products
@@ -120,6 +159,7 @@ RailsAdmin.config do |config|
       field :payment_conditions
       field :icms
       field :pis_cofins
+      field :ipi
       field :last_purchase
       field :notes
       field :products do
@@ -152,6 +192,17 @@ RailsAdmin.config do |config|
       field :suppliers do
         inline_add false
       end
+    end
+
+    list do
+      field :name
+      field :occupation
+      field :email
+      field :phone
+      field :cell_phone
+      field :suppliers
+      field :created_at
+      field :updated_at
     end
 
     show do

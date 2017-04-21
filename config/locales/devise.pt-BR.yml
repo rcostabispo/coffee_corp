@@ -1,6 +1,6 @@
 # encoding: utf-8
 # Additional translations at https://github.com/plataformatec/devise/wiki/I18n
-http://www.akitaonrails.com/2012/07/14/internationalizacao-i18n-minima-em-rails-3-2-parte-1
+
 pt-BR:
   devise:
     confirmations:
