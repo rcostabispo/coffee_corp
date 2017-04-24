@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 
 # RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data.
 gem 'rails_admin', '1.1.1'
+# rails_Admin theme
+gem 'rails_admin_rollincode', '1.2.1'
 
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '4.2.1'
