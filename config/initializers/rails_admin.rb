@@ -29,6 +29,7 @@ RailsAdmin.config do |config|
       field :name
       field :document
       field :phone
+      field :email
       field :admin do
         visible do
           bindings[:view].current_user.admin?
@@ -39,6 +40,47 @@ RailsAdmin.config do |config|
           bindings[:view].current_user.admin?
         end
       end
+      field :notes
+      field :password
+      field :password_confirmation
+    end
+
+    create do
+      field :name
+      field :document
+      field :phone
+      field :email
+      field :admin do
+        visible do
+          bindings[:view].current_user.admin?
+        end
+      end
+      field :status do
+        visible do
+          bindings[:view].current_user.admin?
+        end
+      end
+      field :notes
+      field :password
+      field :password_confirmation
+    end
+
+    list do
+      field :name
+      field :document
+      field :phone
+      field :email
+      field :admin
+      field :status
+    end
+
+    show do
+      field :name
+      field :document
+      field :phone
+      field :email
+      field :admin
+      field :status
       field :notes
     end
   end
